@@ -4,9 +4,209 @@ GMaps.js - A Javascript library that simplifies your life
 GMaps.js allows you to use the potential of Google Maps in a simple way. No more extensive documentation or large amount of code.
 
 Visit the examples in [hpneo.github.com/gmaps](http://hpneo.github.com/gmaps/)
+Go to the API Documentation [hpneo.github.io/gmaps/documentation.html](http://hpneo.github.io/gmaps/documentation.html)
+
+Build
+------
+
+If you would like to build gmaps from source run the following at the terminal:
+
+```sh
+git clone https://github.com/HPNeo/gmaps.git
+cd gmaps
+npm install
+grunt
+```
 
 Changelog
 ---------
+
+0.4.9
+-----------------------
+* Add UMD support (AMD, CommonJS, browser globals)
+* Add retina support
+* FitZoom only use visible markers
+
+0.4.8
+-----------------------
+* Fix getRoutes
+
+0.4.7
+-----------------------
+* Add callback for failure in getRoutes
+* Update marker clusterer after remove marker
+* Add support for string arrays to arrayToLatLng
+
+0.4.6
+-----------------------
+* Allow initialising GMaps without new
+* Added styled map support for static maps
+* Fixed name display for styled maps
+* Allow no zoom for static map request
+
+0.4.5
+-----------------------
+* Fix IE8 bug using array_map
+* Add Grunt and Bower support
+
+0.4.4
+-----------------------
+* Fix buildContextMenu reference in addMarker
+
+0.4.3
+-----------------------
+* Fix removePolylines and removePolygons
+
+0.4.2
+-----------------------
+* Fix drawSteppedRoute
+
+0.4.1
+-----------------------
+* Fix fitZoom
+
+0.4.0
+-----------------------
+* Split gmaps.js in modules
+
+0.3.5
+-----------------------
+* Enable new Google Maps style
+
+0.3.4
+-----------------------
+* Add support for context menu in multiple maps
+
+0.3.3
+-----------------------
+* Fix destination as address in getRoutes
+
+0.3.2
+-----------------------
+* Support for removing Fusion Tables and GeoRSS/KML layers with removeLayer
+
+0.3.1
+-----------------------
+* Improve event binding at adding markers, polylines or polygons
+
+0.3
+-----------------------
+* Add native events to google.maps objects and custom events to GMaps maps
+* Check for Google Maps library and defined element when initialize
+* Allow route origins to be a string or array
+
+0.2.31
+-----------------------
+* Fix context menu position bug
+
+0.2.30
+-----------------------
+* New feature: StreetView Panoramas
+
+0.2.29
+-----------------------
+* New methods: removePolyline and removePolygon
+* Tests for Styled MapTypes
+
+0.2.28
+-----------------------
+* Test suite
+* Fix double event firing bug
+
+0.2.27
+-----------------------
+* Allow create context menus for markers
+
+0.2.26
+-----------------------
+* Fix bug in getElevations
+* Rename fitBounds to fitLatLngBounds
+
+0.2.25
+-----------------------
+* Support for GeoJSON in drawPolygon
+* Use 'complete' instead of 'always' in GMaps.geolocate
+
+0.2.24
+-----------------------
+* New feature: **Overlay Map Types**
+
+0.2.23
+-----------------------
+* Add full support to google.maps.PolylineOptions
+* New method: removeMarker
+
+0.2.22
+-----------------------
+* New feature: **Map Types**
+
+0.2.21
+-----------------------
+* Support to add google.maps.Marker objects in addMarker and addMarkers methods.
+
+0.2.20
+-----------------------
+* Add support for other HTML block elements instead "div" (like "section").
+
+0.2.19
+-----------------------
+* Use MarkerClusterer to group markers
+
+0.2.18
+-----------------------
+* Check if GMaps is defined before load extensions
+
+0.2.17
+-----------------------
+* Fix bug with disableDefaultUI option in constructor
+
+0.2.16
+-----------------------
+* Fix another bug in createMarker
+
+0.2.15
+-----------------------
+* Fix bug in createMarker
+
+0.2.14
+-----------------------
+* Adding IDs, classes and innerHTML to createControl. (**Note**: Use 'content' instead 'text' in createControl)
+
+0.2.13
+-----------------------
+* Add support for Places library in addLayer
+
+0.2.12
+-----------------------
+* Fix map events without MouseEvent object
+* Fix bug in drawCircle and drawRectangle
+* Fix bug in zoomIn and zoomOut
+* New methods: removePolygon and removePolygons
+
+0.2.11
+-----------------------
+* Add support to Panoramio in addLayer
+
+0.2.10
+-----------------------
+* New method: toImage
+
+0.2.9
+-----------------------
+* Extend the drawSteppedRoute and travelRoute functions
+
+0.2.8
+-----------------------
+* New feature: **Layers**
+
+0.2.7
+-----------------------
+* New method: removeRoutes
+* Access all native methods of google.maps.Map class
+
+0.2.6
+-----------------------
+* Support for multiple overlays
 
 0.2.5
 -----------------------
