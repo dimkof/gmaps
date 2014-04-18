@@ -21,6 +21,16 @@ grunt
 Changelog
 ---------
 
+0.4.11
+-----------------------
+* Add RadarSearch to the places layer
+* Update default control styles to match new Google Maps release.
+
+0.4.10
+-----------------------
+* Fix and optimize removeMarkers
+* Fix bug in addMarker (issue #270)
+
 0.4.9
 -----------------------
 * Add UMD support (AMD, CommonJS, browser globals)
@@ -379,7 +389,7 @@ Changelog
 
 License
 ---------
-MIT License. Copyright 2012 Gustavo Leon. http://github.com/hpneo
+MIT License. Copyright 2014 Gustavo Leon. http://github.com/hpneo
 
 Permission is hereby granted, free of charge, to any
 person obtaining a copy of this software and associated
